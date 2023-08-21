@@ -1,37 +1,37 @@
-
 class Asientos:
-    def __init__(color, registro, precio):
+    def __init__(self, color, registro, precio):
         self.color = color 
-        self.regitro = registro
+        self.registro = registro
         self.precio = precio
     
     def cambiarColor(self, color):
-
+        self.color = color
 
 class Motor:
-    def __init__(numeroCilindros, tipo, registro):
+    def __init__(self, numeroCilindros, tipo, registro):
         self.numeroCilindros = numeroCilindros
-        self.tipo= tipo
+        self.tipo = tipo
         self.registro = registro
 
-    def CambiarRegistro(self):
+    def cambiarRegistro(self, nuevo_registro):
+        self.registro = nuevo_registro
 
-    def asignarTipo(self):
+    def asignarTipo(self, nuevo_tipo):
+        self.tipo = nuevo_tipo
 
 
 
 class Auto:
-    def __init__(modelo, precio, asientos, marca, motor, registro, cantidadCreados):
-        Self.modelo = modelo
-        Self.precio = precio
-        Self.asiento = [Asientos]
-        Self.marca = marca
-        Self.motor = Motor
-        Self.registro = registro
-        Self.cantidadCreados = cantidadCreados
+    def __init__(self, modelo, precio, asientos, marca, motor, registro, cantidadCreados):
+        self.modelo = modelo
+        self.precio = precio
+        self.asiento = [Asientos]
+        self.marca = marca
+        self.motor = Motor
+        self.registro = registro
+        self.cantidadCreados = cantidadCreados
 
     def cantidadAsientos(self):
 
 
     def verificarIntegridad(self):
-        
