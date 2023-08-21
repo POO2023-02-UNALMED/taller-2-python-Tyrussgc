@@ -1,8 +1,8 @@
 class Asiento:
-    def __init__(self, color, registro, precio):
+    def __init__(self, color, precio, registro):
         self.color = color 
-        self.registro = registro
         self.precio = precio
+        self.registro = registro
     
     def cambiarColor(self, ncolor):
         colores_validos = ["negro", "amarillo", "blanco", "rojo", "verde"]
