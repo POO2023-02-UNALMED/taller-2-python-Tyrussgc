@@ -45,9 +45,14 @@ class Auto:
                 if asiento is not None:
                     if asiento.registro != self.registro:
                         return "Las piezas no son originales"
-            return "Auto originales"
+            return "Auto original"
         else:
             return "Las piezas no son originales"
+
+motor = Motor(4, "electrico", 142)
+        
+auto = Auto("model 3", 33000, [], "tesla", motor, 341, 0)
+
 
 
 
