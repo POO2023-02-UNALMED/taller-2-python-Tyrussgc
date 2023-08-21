@@ -23,14 +23,15 @@ class Motor:
             self.tipo = ntipo 
 
 class Auto:
-    def __init__(self, modelo, precio, asientos, marca, motor, registro, cantidadCreados):
+    cantidadCreados = 0
+    def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo = modelo
         self.precio = precio
-        self.asientos = asientos  
+        self.listasientos = asientos  
         self.marca = marca
         self.motor = motor  
         self.registro = registro
-        self.cantidadCreados = cantidadCreados
+        
 
     def cantidadAsientos(self):
         numAsientos = 0
@@ -49,9 +50,6 @@ class Auto:
         else:
             return "Las piezas no son originales"
 
-motor = Motor(4, "electrico", 142)
-        
-auto = Auto("model 3", 33000, [], "tesla", motor, 341, 0)
 
 
 
